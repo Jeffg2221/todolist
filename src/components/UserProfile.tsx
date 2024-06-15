@@ -130,8 +130,10 @@ const UserProfile: React.FC = () => {
                     )}
                 </div>
                 <div className="text-center">
-                    <button className="btn btn-primary mt-3" onClick={toggleEditMode}> // Button to toggle edit mode
-                        {isEditMode ? 'Save' : 'Edit Profile'} // Display 'Save' if in edit mode, otherwise 'Edit Profile'
+                {/* // Button to toggle edit mode and save changes */}
+                    <button className="btn btn-primary mt-3" onClick={toggleEditMode}> 
+                    {/* // Display 'Save' if in edit mode, otherwise 'Edit Profile' */}
+                        {isEditMode ? 'Save' : 'Edit Profile'} 
                     </button>
                 </div>
             </div>
