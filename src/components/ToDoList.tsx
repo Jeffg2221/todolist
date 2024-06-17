@@ -71,7 +71,7 @@ const ToDoList: React.FC = () => {
                         placeholder="Enter a new to-do item" // Placeholder text for the input
                     />
                     <div className="input-group-append">
-                        <button type="submit" className="btn btn-primary">Add</button> // Button to add a new item
+                        <button type="submit" className="btn btn-primary">Add</button>
                     </div>
                 </div>
             </form>
@@ -79,8 +79,8 @@ const ToDoList: React.FC = () => {
             <ul className="list-group">
                 {items.map(item => (
                     <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
-                        {item.content} // Display the content of the to-do item
-                        <button onClick={() => handleRemoveItem(item.id)} className="btn btn-danger">Remove</button> // Button to remove the item
+                        {item.content} 
+                        <button onClick={() => handleRemoveItem(item.id)} className="btn btn-danger">Remove</button> 
                     </li>
                 ))}
             </ul>
